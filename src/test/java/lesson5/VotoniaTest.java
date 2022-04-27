@@ -78,7 +78,7 @@ public class VotoniaTest {
     }
 
     @AfterAll
-    void tearDown() {
+    static void tearDown() {
         driver.quit();
     }
 
