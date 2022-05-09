@@ -48,7 +48,7 @@ public class Votonia2Test {
                 .addToCart()
                 .menuBlock
                 .clickCart()
-                .checkAddToCart();
+                 .checkAddToCart();
     }
 
     @AfterAll

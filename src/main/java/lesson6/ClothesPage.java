@@ -1,5 +1,6 @@
 package lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +17,7 @@ public class ClothesPage extends BaseView {
     @FindBy(xpath = goodButtonXpathLocator)
     private WebElement goodButton;
 
+    @Step("Переходим на страницу товара")
     public GoodPage clickgoodButton() {
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(goodButtonXpathLocator)));
         goodButton.click();
